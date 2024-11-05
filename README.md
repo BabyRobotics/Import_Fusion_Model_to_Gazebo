@@ -78,7 +78,7 @@ This section is based on a fork from https://github.com/SpaceMaster85/fusion2urd
 Clone this repo
 
 ```shell
- git clone git@github.com:YanningDai/Import_Fusion_Model_to_Gazebo.git
+ git clone git@github.com:BabyRobotics/Import_Fusion_Model_to_Gazebo.git
 ```
 
 **Note:** By default, this setup uses ROS 2; however, if you need ROS 1, set the variable `ros_version_is_ros1` to `True` in the `Import_Fusion_Model_to_Gazebo/URDF_Exporter.py` file.
@@ -182,7 +182,7 @@ For more details and examples, see:  https://github.com/SpaceMaster85/fusion2urd
 
 2. If the SDF file can’t find the model path, it could be due to a version mismatch. Use `gz sim -h` to check environment variables, and update `export GZ_SIM_RESOURCE_PATH` to match the model path variable in your version. Some Gazebo versions use `GAZEBO_MODEL_PATH` as the path for models.
 
-3. Materials aren’t set, so `inertial` matrix and `mass` parameters might be incorrect, but this won’t affect the display.
+3. Materials aren’t set, so `inertial matrix` and `mass` parameters might be incorrect, but this won’t affect the display.
 
 4. If the Gazebo world doesn’t update and remains in a previous state, clear the Gazebo cache with:
 
