@@ -153,11 +153,12 @@ gz sim src/${MODEL_NAME}_description/urdf/${MODEL_NAME}.sdf
 **Links**
 
 - Ensure all links are set as components in Fusion 360 by creating corresponding components.
+- The root link should be named as **"base_link"**.
 
 **Joint Constraints**
 
 - Supported Joint Types: Only "Rigid," "Slider," and "Revolute" joints are supported.
-- **Parent links** should be set as Component2 when defining a joint. Setting "base_link" as Component1, for instance, will cause a "KeyError: base_link__1" error.
+- When defining a joint, the **parent link** should be set as **Component2**, and the **child link** should be set as **Component1**. For example, for a joint at the root, the "base_link" should be Component2; Otherwise, a "KeyError: base_link__1" error will be raised.
 
 **Export Limitations**
 
