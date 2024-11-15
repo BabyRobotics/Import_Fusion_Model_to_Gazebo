@@ -33,7 +33,7 @@ lsb_release -a
 
 3. **Install ROS 2 :**
 
-- If you are intalling ROS 2 jazzy, use:
+- If you are installing ROS 2 jazzy, use:
 
 `https://docs.ros.org/en/jazzy/Installation/Alternatives/Ubuntu-Development-Setup.html`
 
@@ -45,6 +45,12 @@ lsb_release -a
 
 - For the recommended Gazebo version, see the Gazebo Harmonic Installation Guide: `https://gazebosim.org/docs/harmonic/install_ubuntu/`
 
+5. **Install colcon:**
+
+```shell
+sudo apt-get install colcon
+```
+ 
 ### Environment Configuration
 
 Configure your shell to automatically source the ROS 2 environment each time you open a terminal:
